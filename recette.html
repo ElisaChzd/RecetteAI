@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestion de Recette</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="RecetteAI.png" alt="Logo RecetteAI">
+        </div>
+        <nav>
+            <a href="index.html" class="btn">Accueil</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="recipe-form">
+            <h2>Trouvez votre prochaine recette</h2>
+            <form>
+                <div class="form-group">
+                    <label for="ingredients">Ingrédients :</label>
+                    <input type="text" id="ingredients" placeholder="Entrez vos ingrédients (ex: tomates, poulet, oignons)">
+                </div>
+                <div class="form-group">
+                    <label>Préférences Alimentaires :</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="preferences" value="vegetarien"> Végétarien</label>
+                        <label><input type="checkbox" name="preferences" value="sans-gluten"> Sans gluten</label>
+                        <label><input type="checkbox" name="preferences" value="vegan"> Vegan</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="dish-type">Type de Plat :</label>
+                    <select id="dish-type">
+                        <option value="">Sélectionnez un type</option>
+                        <option value="entree">Entrée</option>
+                        <option value="plat-principal">Plat principal</option>
+                        <option value="dessert">Dessert</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="prep-time">Temps de Préparation :</label>
+                    <select id="prep-time">
+                        <option value="">Sélectionnez une durée</option>
+                        <option value="moins-30">Moins de 30 minutes</option>
+                        <option value="30-60">Entre 30 et 60 minutes</option>
+                        <option value="plus-60">Plus de 60 minutes</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Rechercher une recette</button>
+            </form>
+        </div>
+        <div class="loader" id="loader" style="display: none;"></div>
+        <p id="loadingText" style="display: none;">Recherche en cours...</p>
+        <div class="recipe-container"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 RecetteAI. Tous droits réservés.</p>
+    </footer>
+    <script src="recette.js"></script>
+</body>
+</html>
