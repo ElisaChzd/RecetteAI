@@ -28,6 +28,10 @@ RecetteAI offre plusieurs avantages :
 - **Simplicité** : L'interface utilisateur est conçue pour être facile à utiliser, même pour les personnes n'ayant pas de compétences techniques.
 - **Gain de Temps** : En quelques clics, vous pouvez obtenir une recette complète sans avoir à chercher des idées sur internet.
 
+
+## Comment utiliser RecetteAI ?
+Très simple, il suffit de lancer index.html ce qui ouvrira RecetteAI dans votre moteur de recherche.
+
 ---
 
 Fait par Elisa CHAZARD M1 SE1
